@@ -33,38 +33,6 @@
             endingLineNumber = "323"
             landmarkName = "-peripheral:didDiscoverServices:"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[XWBluetoothManager peripheral:didDiscoverServices:]"
-                  moduleName = "XWBluetooth"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wkun/Projects/GitHub/XWBluetooth/XWBluetooth/XWBluetoothManager/XWBluetoothManager.m"
-                  timestampString = "568043893.432452"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "132">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[XWBluetoothManager peripheral:didDiscoverServices:]"
-                  moduleName = "XWBluetooth"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/wkun/Projects/GitHub/XWBluetooth/XWBluetooth/XWBluetoothManager/XWBluetoothManager.m"
-                  timestampString = "568043893.434754"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "323"
-                  endingLineNumber = "323"
-                  offsetFromSymbolStart = "148">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

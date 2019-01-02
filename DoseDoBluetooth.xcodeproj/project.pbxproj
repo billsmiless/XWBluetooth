@@ -117,7 +117,6 @@
 		9A66771721DCBC6A007F51D1 /* CharacteristicsList */ = {
 			isa = PBXGroup;
 			children = (
-				9A66771821DCBC6A007F51D1 /* XWBluetoothKeyboard */,
 				9A66771921DCBC6A007F51D1 /* XWCharacteristicCell.h */,
 				9A66771A21DCBC6A007F51D1 /* XWCharacteristicCell.m */,
 				9A66771B21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.h */,
@@ -126,13 +125,6 @@
 				9A66771E21DCBC6A007F51D1 /* XWWriteCharacteristicView.m */,
 			);
 			path = CharacteristicsList;
-			sourceTree = "<group>";
-		};
-		9A66771821DCBC6A007F51D1 /* XWBluetoothKeyboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = XWBluetoothKeyboard;
 			sourceTree = "<group>";
 		};
 		9A66771F21DCBC6A007F51D1 /* DeviceList */ = {
