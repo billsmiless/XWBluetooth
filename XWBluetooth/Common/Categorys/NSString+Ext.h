@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Ext)
 + (BOOL)isNullString:(NSString*)str;
++ (NSString *)convertDataToHexStr:(NSData *)data;
++ (NSData *)convertHexStrToData:(NSString *)str;
 @end
 
 NS_ASSUME_NONNULL_END

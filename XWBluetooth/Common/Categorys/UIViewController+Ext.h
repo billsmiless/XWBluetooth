@@ -12,6 +12,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Ext)
+
+#pragma mark - NavigationBar
+
 - (void)configSelfData;
 - (void)configWhiteNaviSelfData;
 
@@ -65,7 +68,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIButton*)getButtonAtRightBarItem;
 
-#pragma mark - NavigationBar
 /**
  设置导航栏透明
  */
@@ -87,6 +89,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setStatusBarStyleIsDefault;
 - (void)setStatusBarStyleIsLight;
+
+#pragma mark - AlertView
+- (void)showMsg:(NSString*)msg;
+
 @end
 
 

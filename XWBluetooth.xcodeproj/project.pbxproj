@@ -12,13 +12,17 @@
 		8126252921DB64FC000E9681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8126252021DB64FC000E9681 /* LaunchScreen.storyboard */; };
 		8126252B21DB64FC000E9681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126252421DB64FC000E9681 /* main.m */; };
 		8126252C21DB64FC000E9681 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8126252521DB64FC000E9681 /* Info.plist */; };
-		8126252F21DB653F000E9681 /* XWBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126252D21DB653F000E9681 /* XWBluetoothManager.m */; };
 		8126253321DB6F98000E9681 /* XWDeviceListCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126253221DB6F98000E9681 /* XWDeviceListCtrl.m */; };
 		8126253B21DB71E0000E9681 /* UINavigationController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126253521DB71E0000E9681 /* UINavigationController+Ext.m */; };
 		8126253C21DB71E0000E9681 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126253721DB71E0000E9681 /* UIViewController+Ext.m */; };
 		8126253D21DB71E0000E9681 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126253921DB71E0000E9681 /* UIView+LayoutMethods.m */; };
 		8126254021DB7207000E9681 /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126253F21DB7207000E9681 /* UIColor+Ext.m */; };
 		8126254321DB874B000E9681 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 8126254221DB874B000E9681 /* NSString+Ext.m */; };
+		9A6676FF21DC4A60007F51D1 /* XWServiceListCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6676FE21DC4A60007F51D1 /* XWServiceListCtrl.m */; };
+		9A66770321DC5471007F51D1 /* XWCharacteristicsListCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66770221DC5471007F51D1 /* XWCharacteristicsListCtrl.m */; };
+		9A66770621DC5495007F51D1 /* XWCharacteristicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66770521DC5495007F51D1 /* XWCharacteristicCell.m */; };
+		9A66770D21DC746A007F51D1 /* XWWriteCharacteristicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66770C21DC746A007F51D1 /* XWWriteCharacteristicView.m */; };
+		9A66771121DC7652007F51D1 /* KKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66771021DC7652007F51D1 /* KKeyBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +33,6 @@
 		8126252121DB64FC000E9681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8126252421DB64FC000E9681 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8126252521DB64FC000E9681 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8126252D21DB653F000E9681 /* XWBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWBluetoothManager.m; sourceTree = "<group>"; };
-		8126252E21DB653F000E9681 /* XWBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWBluetoothManager.h; sourceTree = "<group>"; };
 		8126253121DB6F98000E9681 /* XWDeviceListCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWDeviceListCtrl.h; sourceTree = "<group>"; };
 		8126253221DB6F98000E9681 /* XWDeviceListCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWDeviceListCtrl.m; sourceTree = "<group>"; };
 		8126253521DB71E0000E9681 /* UINavigationController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Ext.m"; sourceTree = "<group>"; };
@@ -43,6 +45,16 @@
 		8126253F21DB7207000E9681 /* UIColor+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
 		8126254121DB874B000E9681 /* NSString+Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
 		8126254221DB874B000E9681 /* NSString+Ext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		9A6676FD21DC4A60007F51D1 /* XWServiceListCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWServiceListCtrl.h; sourceTree = "<group>"; };
+		9A6676FE21DC4A60007F51D1 /* XWServiceListCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWServiceListCtrl.m; sourceTree = "<group>"; };
+		9A66770121DC5471007F51D1 /* XWCharacteristicsListCtrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWCharacteristicsListCtrl.h; sourceTree = "<group>"; };
+		9A66770221DC5471007F51D1 /* XWCharacteristicsListCtrl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWCharacteristicsListCtrl.m; sourceTree = "<group>"; };
+		9A66770421DC5495007F51D1 /* XWCharacteristicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWCharacteristicCell.h; sourceTree = "<group>"; };
+		9A66770521DC5495007F51D1 /* XWCharacteristicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWCharacteristicCell.m; sourceTree = "<group>"; };
+		9A66770B21DC746A007F51D1 /* XWWriteCharacteristicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XWWriteCharacteristicView.h; sourceTree = "<group>"; };
+		9A66770C21DC746A007F51D1 /* XWWriteCharacteristicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XWWriteCharacteristicView.m; sourceTree = "<group>"; };
+		9A66770F21DC7652007F51D1 /* KKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyBoard.h; sourceTree = "<group>"; };
+		9A66771021DC7652007F51D1 /* KKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKeyBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +71,6 @@
 		812624F721DB619D000E9681 = {
 			isa = PBXGroup;
 			children = (
-				8126251C21DB64FC000E9681 /* XWBluetoothManager */,
 				8126251921DB64FC000E9681 /* AppDelegate */,
 				8126252621DB64FC000E9681 /* Bisiness */,
 				8126251D21DB64FC000E9681 /* Common */,
@@ -86,19 +97,10 @@
 			path = XWBluetooth/AppDelegate;
 			sourceTree = "<group>";
 		};
-		8126251C21DB64FC000E9681 /* XWBluetoothManager */ = {
-			isa = PBXGroup;
-			children = (
-				8126252E21DB653F000E9681 /* XWBluetoothManager.h */,
-				8126252D21DB653F000E9681 /* XWBluetoothManager.m */,
-			);
-			name = XWBluetoothManager;
-			path = XWBluetooth/XWBluetoothManager;
-			sourceTree = "<group>";
-		};
 		8126251D21DB64FC000E9681 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9A66770E21DC7652007F51D1 /* Views */,
 				8126253421DB7079000E9681 /* Categorys */,
 			);
 			name = Common;
@@ -120,6 +122,8 @@
 		8126252621DB64FC000E9681 /* Bisiness */ = {
 			isa = PBXGroup;
 			children = (
+				9A66770021DC545C007F51D1 /* CharacteristicsList */,
+				9A6676FC21DC4A4F007F51D1 /* ServiceList */,
 				8126253021DB658B000E9681 /* DeviceList */,
 			);
 			name = Bisiness;
@@ -150,6 +154,37 @@
 				8126254221DB874B000E9681 /* NSString+Ext.m */,
 			);
 			path = Categorys;
+			sourceTree = "<group>";
+		};
+		9A6676FC21DC4A4F007F51D1 /* ServiceList */ = {
+			isa = PBXGroup;
+			children = (
+				9A6676FD21DC4A60007F51D1 /* XWServiceListCtrl.h */,
+				9A6676FE21DC4A60007F51D1 /* XWServiceListCtrl.m */,
+			);
+			path = ServiceList;
+			sourceTree = "<group>";
+		};
+		9A66770021DC545C007F51D1 /* CharacteristicsList */ = {
+			isa = PBXGroup;
+			children = (
+				9A66770121DC5471007F51D1 /* XWCharacteristicsListCtrl.h */,
+				9A66770221DC5471007F51D1 /* XWCharacteristicsListCtrl.m */,
+				9A66770421DC5495007F51D1 /* XWCharacteristicCell.h */,
+				9A66770521DC5495007F51D1 /* XWCharacteristicCell.m */,
+				9A66770B21DC746A007F51D1 /* XWWriteCharacteristicView.h */,
+				9A66770C21DC746A007F51D1 /* XWWriteCharacteristicView.m */,
+			);
+			path = CharacteristicsList;
+			sourceTree = "<group>";
+		};
+		9A66770E21DC7652007F51D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A66770F21DC7652007F51D1 /* KKeyBoard.h */,
+				9A66771021DC7652007F51D1 /* KKeyBoard.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,13 +257,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8126252F21DB653F000E9681 /* XWBluetoothManager.m in Sources */,
 				8126254021DB7207000E9681 /* UIColor+Ext.m in Sources */,
 				8126253321DB6F98000E9681 /* XWDeviceListCtrl.m in Sources */,
+				9A66770321DC5471007F51D1 /* XWCharacteristicsListCtrl.m in Sources */,
 				8126253C21DB71E0000E9681 /* UIViewController+Ext.m in Sources */,
 				8126253B21DB71E0000E9681 /* UINavigationController+Ext.m in Sources */,
+				9A6676FF21DC4A60007F51D1 /* XWServiceListCtrl.m in Sources */,
+				9A66771121DC7652007F51D1 /* KKeyBoard.m in Sources */,
 				8126252B21DB64FC000E9681 /* main.m in Sources */,
 				8126254321DB874B000E9681 /* NSString+Ext.m in Sources */,
+				9A66770D21DC746A007F51D1 /* XWWriteCharacteristicView.m in Sources */,
+				9A66770621DC5495007F51D1 /* XWCharacteristicCell.m in Sources */,
 				8126252721DB64FC000E9681 /* AppDelegate.m in Sources */,
 				8126253D21DB71E0000E9681 /* UIView+LayoutMethods.m in Sources */,
 			);
@@ -364,6 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E43JSF7XC8;
 				INFOPLIST_FILE = "$(SRCROOT)/XWBluetooth/Resources/Info.plist";
@@ -374,6 +414,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bill.XWBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -382,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E43JSF7XC8;
 				INFOPLIST_FILE = "$(SRCROOT)/XWBluetooth/Resources/Info.plist";
@@ -392,6 +434,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bill.XWBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

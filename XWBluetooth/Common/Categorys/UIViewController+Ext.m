@@ -184,6 +184,19 @@
     self.navigationController.navigationBar.shadowImage = [UIImage new];
 }
 
+#pragma mark - AlertView
+- (void)showMsg:(NSString*)msg{
+    /*  消息提示  */
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    UIAlertController *alertCtrl = [UIAlertController alertControllerWithTitle:nil message:msg preferredStyle:UIAlertControllerStyleAlert];
+    [alertCtrl addAction:action];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertCtrl animated:YES completion:nil];
+}
+
+
 #pragma mark - Private
 -(UIBarButtonItem*)backItemWithTarget:(id)target action:(SEL)action{
     return [self  backItemWithTarget:target action:action imgName:nil];

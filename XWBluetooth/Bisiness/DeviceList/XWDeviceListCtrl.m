@@ -9,13 +9,15 @@
 #import "XWDeviceListCtrl.h"
 #import "UINavigationController+Ext.h"
 #import "UIViewController+Ext.h"
-#import "XWBluetoothManager.h"
 #import "NSString+Ext.h"
+#import "XWServiceListCtrl.h"
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface XWDeviceListCtrl ()<XWBluetoothManagerDelegate,UITableViewDelegate,UITableViewDataSource>
+@interface XWDeviceListCtrl ()<UITableViewDelegate,UITableViewDataSource,CBCentralManagerDelegate>
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) NSArray *datas;
-@property (nonatomic, strong) XWBluetoothManager *bluetoothManager;
+@property (nonatomic, strong) NSMutableArray *datas;
+@property (nonatomic, strong) CBCentralManager *centralManager;
+@property (nonatomic, strong) CBPeripheral *connectedPeripheral;
 @end
 
 @implementation XWDeviceListCtrl
@@ -29,47 +31,25 @@
     self.navigationItem.title = @"设备列表";
     
     [self addRightBarItemWithTitle:@"扫描" action:@selector(handleScan)];
+    
+//    [self addLeftBarItemWithTitle:@"断开设备" action:@selector(handleDisconnectAll)];
+    
+    self.navigationItem.leftBarButtonItems = @[[[UIBarButtonItem alloc] initWithTitle:@"断开设备" style:UIBarButtonItemStyleDone target:self action:@selector(handleDisconnectAll)]];
 }
 
 #pragma mark - TouchEvents
 - (void)handleScan{
-    [self.bluetoothManager scanBluetoothDevice];
+
+    [self.centralManager scanForPeripheralsWithServices:nil options:@{CBCentralManagerScanOptionAllowDuplicatesKey:@YES }];
 }
 
-#pragma mark - BluetoothDelegate
-- (void)bluetoothManager:(XWBluetoothManager *)btManager deviceListOfScaned:(NSArray<CBPeripheral *> *)deviceList{
-    _datas = deviceList;
-    
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
-    });
-}
-
-- (void)bluetoothManager:(XWBluetoothManager *)btManager didConnectPeripheral:(CBPeripheral *)peripheral{
-    //连接设备成功
-    NSInteger index = [self.datas indexOfObject:peripheral];
-    dispatch_async(dispatch_get_main_queue(), ^{
+- (void)handleDisconnectAll{
+    //断开所有设备
+    if( self.connectedPeripheral ){
+        [self.centralManager cancelPeripheralConnection:self.connectedPeripheral];
+    }else{
         
-        UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0]];
-        NSString *text = [cell.textLabel.text stringByAppendingString:@"      已连接"];
-        cell.textLabel.text = text;
-    });
-}
-
-- (void)bluetoothManager:(XWBluetoothManager *)btManager didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [self.tableView reloadData];
-    });
-}
-
-/**
- 中心设备状态改变
- 
- @param btManager 蓝牙管理类
- @param central 中心设备
- */
-- (void)bluetoothManager:(XWBluetoothManager *)btManager didUpdateState:(CBCentralManager *)central{
-    
+    }
 }
 
 #pragma mark - TableViewDelegate
@@ -78,16 +58,7 @@
     
     CBPeripheral *per = _datas[indexPath.row];
     
-    if( per.state == CBPeripheralStateConnecting ){
-        [XWBluetoothManager showMsg:@"正在连接中..."];
-        return;
-    }
-    
-    if( per.state == CBPeripheralStateConnected || [per isEqual:self.bluetoothManager.connectedPeripheral] ){
-        [self.bluetoothManager disConnectDeviceWithPeripheral:per];
-    }
-    else
-        [self.bluetoothManager connectDeviceWithPeripheral:per];
+    [self.centralManager connectPeripheral:per options:@{CBConnectPeripheralOptionNotifyOnDisconnectionKey:@YES}];
 }
 
 #pragma mark - TableViewDataSource
@@ -145,14 +116,6 @@
     return _tableView;
 }
 
-- (XWBluetoothManager *)bluetoothManager{
-    if( !_bluetoothManager ){
-        _bluetoothManager = [XWBluetoothManager sharedBluetoothManager];
-        _bluetoothManager.delegate = self;
-    }
-    return _bluetoothManager;
-}
-
 @end
 
 
@@ -164,6 +127,122 @@
     [navi setNavigationBarBgClear];
     
     return navi;
+}
+
+@end
+
+@implementation XWDeviceListCtrl(CentralManager)
+
+#pragma mark - Private
+
+#pragma mark - CBCentralManagerDelegate 中心设备的代理
+
+
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central{
+    
+    switch (central.state) {
+        case CBManagerStateUnknown:
+        {
+            //未知状态
+        }
+            break;
+            
+        case CBManagerStateResetting:
+        {
+            //重置中
+        }
+            break;
+        case CBManagerStateUnsupported:
+        {
+            //不支持
+            [self showMsg:@"设备不支持蓝牙"];
+        }
+            break;
+        case CBManagerStateUnauthorized:
+        {
+            //未授权
+            [self showMsg:@"用户未授权"];
+        }
+            break;
+        case CBManagerStatePoweredOff:{
+            //蓝牙关闭
+            [self showMsg:@"请打开蓝牙"];
+        }
+            break;
+        case CBManagerStatePoweredOn:{
+            //可用状态
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+
+- (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary<NSString *, id> *)dict{
+    //当App 被终止后，再次启动App时， 会恢复之前的蓝牙状态，中断之前的数据存在dict中
+}
+
+- (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI{
+    //扫描外围蓝牙设备时，得到扫描的设备
+    
+    //保存扫描到的外围蓝牙设备
+    if( peripheral && [self.datas containsObject:peripheral] ==NO ){
+
+        if( _datas == nil ) _datas = [NSMutableArray new];
+        [_datas addObject:peripheral];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }
+}
+
+
+- (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral{
+    //连接外围设备成功
+    self.connectedPeripheral = peripheral;
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        XWServiceListCtrl *lc = [XWServiceListCtrl new];
+        lc.peripheral = peripheral;
+        [self.navigationController pushViewController:lc animated:nil];
+    });
+    
+//    //获取该设备的用于交互的服务
+//    [self.connectedPeripheral discoverServices:nil];
+}
+
+- (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error{
+    //连接外围设备失败
+    [self showMsg:@"连接设备失败"];
+    self.connectedPeripheral = nil;
+    
+//    if( _delegate && [_delegate respondsToSelector:@selector(bluetoothManager:didFailToConnectPeripheral:error:)]){
+//        [_delegate bluetoothManager:self didFailToConnectPeripheral:peripheral error:error];
+//    }
+}
+
+- (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error{
+    //与外围蓝牙设备失去连接
+    [self showMsg:@"设备已断开"];
+    self.connectedPeripheral = nil;
+    
+//    if( _delegate && [_delegate respondsToSelector:@selector(bluetoothManager:didDisconnectPeripheral:error:)]){
+//        [_delegate bluetoothManager:self didDisconnectPeripheral:peripheral error:error];
+//    }
+}
+
+#pragma mark - Propertys
+
+- (CBCentralManager *)centralManager {
+    if( !_centralManager ){
+        dispatch_queue_t globalQ = dispatch_queue_create("bluetoothQ", NULL);
+        
+        _centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:globalQ options:@{CBCentralManagerOptionShowPowerAlertKey:@(YES).stringValue}];
+    }
+    
+    return _centralManager;
 }
 
 @end
