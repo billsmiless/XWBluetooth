@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A66773A21DCBC6A007F51D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66771521DCBC6A007F51D1 /* AppDelegate.m */; };
+		9A66773B21DCBC6A007F51D1 /* XWCharacteristicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66771A21DCBC6A007F51D1 /* XWCharacteristicCell.m */; };
+		9A66773C21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66771C21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.m */; };
+		9A66773D21DCBC6A007F51D1 /* XWWriteCharacteristicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66771E21DCBC6A007F51D1 /* XWWriteCharacteristicView.m */; };
+		9A66773E21DCBC6A007F51D1 /* XWDeviceListCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66772121DCBC6A007F51D1 /* XWDeviceListCtrl.m */; };
+		9A66773F21DCBC6A007F51D1 /* XWServiceListCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66772421DCBC6A007F51D1 /* XWServiceListCtrl.m */; };
+		9A66774021DCBC6A007F51D1 /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66772821DCBC6A007F51D1 /* NSString+Ext.m */; };
+		9A66774121DCBC6A007F51D1 /* UIColor+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66772A21DCBC6A007F51D1 /* UIColor+Ext.m */; };
+		9A66774221DCBC6A007F51D1 /* UINavigationController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66772C21DCBC6A007F51D1 /* UINavigationController+Ext.m */; };
+		9A66774321DCBC6A007F51D1 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66772E21DCBC6A007F51D1 /* UIView+LayoutMethods.m */; };
+		9A66774421DCBC6A007F51D1 /* UIViewController+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66773021DCBC6A007F51D1 /* UIViewController+Ext.m */; };
+		9A66774521DCBC6A007F51D1 /* KKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66773321DCBC6A007F51D1 /* KKeyBoard.m */; };
+		9A66774621DCBC6A007F51D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A66773521DCBC6A007F51D1 /* Assets.xcassets */; };
+		9A66774721DCBC6A007F51D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A66773621DCBC6A007F51D1 /* LaunchScreen.storyboard */; };
+		9A66774821DCBC6A007F51D1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A66773821DCBC6A007F51D1 /* Info.plist */; };
+		9A66774921DCBC6A007F51D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66773921DCBC6A007F51D1 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8126250021DB619D000E9681 /* DoseDoBluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoseDoBluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A66771421DCBC6A007F51D1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9A66771521DCBC6A007F51D1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9A66771921DCBC6A007F51D1 /* XWCharacteristicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCharacteristicCell.h; sourceTree = "<group>"; };
+		9A66771A21DCBC6A007F51D1 /* XWCharacteristicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCharacteristicCell.m; sourceTree = "<group>"; };
+		9A66771B21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCharacteristicsListCtrl.h; sourceTree = "<group>"; };
+		9A66771C21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCharacteristicsListCtrl.m; sourceTree = "<group>"; };
+		9A66771D21DCBC6A007F51D1 /* XWWriteCharacteristicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWWriteCharacteristicView.h; sourceTree = "<group>"; };
+		9A66771E21DCBC6A007F51D1 /* XWWriteCharacteristicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWWriteCharacteristicView.m; sourceTree = "<group>"; };
+		9A66772021DCBC6A007F51D1 /* XWDeviceListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDeviceListCtrl.h; sourceTree = "<group>"; };
+		9A66772121DCBC6A007F51D1 /* XWDeviceListCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDeviceListCtrl.m; sourceTree = "<group>"; };
+		9A66772321DCBC6A007F51D1 /* XWServiceListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWServiceListCtrl.h; sourceTree = "<group>"; };
+		9A66772421DCBC6A007F51D1 /* XWServiceListCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWServiceListCtrl.m; sourceTree = "<group>"; };
+		9A66772721DCBC6A007F51D1 /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
+		9A66772821DCBC6A007F51D1 /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
+		9A66772921DCBC6A007F51D1 /* UIColor+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Ext.h"; sourceTree = "<group>"; };
+		9A66772A21DCBC6A007F51D1 /* UIColor+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Ext.m"; sourceTree = "<group>"; };
+		9A66772B21DCBC6A007F51D1 /* UINavigationController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Ext.h"; sourceTree = "<group>"; };
+		9A66772C21DCBC6A007F51D1 /* UINavigationController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Ext.m"; sourceTree = "<group>"; };
+		9A66772D21DCBC6A007F51D1 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		9A66772E21DCBC6A007F51D1 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		9A66772F21DCBC6A007F51D1 /* UIViewController+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Ext.h"; sourceTree = "<group>"; };
+		9A66773021DCBC6A007F51D1 /* UIViewController+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Ext.m"; sourceTree = "<group>"; };
+		9A66773221DCBC6A007F51D1 /* KKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKeyBoard.h; sourceTree = "<group>"; };
+		9A66773321DCBC6A007F51D1 /* KKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKeyBoard.m; sourceTree = "<group>"; };
+		9A66773521DCBC6A007F51D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A66773721DCBC6A007F51D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A66773821DCBC6A007F51D1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A66773921DCBC6A007F51D1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		812624FD21DB619D000E9681 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		812624F721DB619D000E9681 = {
+			isa = PBXGroup;
+			children = (
+				9A66771221DCBC6A007F51D1 /* DoseDoBluetooth */,
+				8126250121DB619D000E9681 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8126250121DB619D000E9681 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8126250021DB619D000E9681 /* DoseDoBluetooth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A66771221DCBC6A007F51D1 /* DoseDoBluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				9A66771321DCBC6A007F51D1 /* AppDelegate */,
+				9A66771621DCBC6A007F51D1 /* Bisiness */,
+				9A66772521DCBC6A007F51D1 /* Common */,
+				9A66773421DCBC6A007F51D1 /* Resources */,
+			);
+			path = DoseDoBluetooth;
+			sourceTree = "<group>";
+		};
+		9A66771321DCBC6A007F51D1 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9A66771421DCBC6A007F51D1 /* AppDelegate.h */,
+				9A66771521DCBC6A007F51D1 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9A66771621DCBC6A007F51D1 /* Bisiness */ = {
+			isa = PBXGroup;
+			children = (
+				9A66771721DCBC6A007F51D1 /* CharacteristicsList */,
+				9A66771F21DCBC6A007F51D1 /* DeviceList */,
+				9A66772221DCBC6A007F51D1 /* ServiceList */,
+			);
+			path = Bisiness;
+			sourceTree = "<group>";
+		};
+		9A66771721DCBC6A007F51D1 /* CharacteristicsList */ = {
+			isa = PBXGroup;
+			children = (
+				9A66771821DCBC6A007F51D1 /* XWBluetoothKeyboard */,
+				9A66771921DCBC6A007F51D1 /* XWCharacteristicCell.h */,
+				9A66771A21DCBC6A007F51D1 /* XWCharacteristicCell.m */,
+				9A66771B21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.h */,
+				9A66771C21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.m */,
+				9A66771D21DCBC6A007F51D1 /* XWWriteCharacteristicView.h */,
+				9A66771E21DCBC6A007F51D1 /* XWWriteCharacteristicView.m */,
+			);
+			path = CharacteristicsList;
+			sourceTree = "<group>";
+		};
+		9A66771821DCBC6A007F51D1 /* XWBluetoothKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XWBluetoothKeyboard;
+			sourceTree = "<group>";
+		};
+		9A66771F21DCBC6A007F51D1 /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				9A66772021DCBC6A007F51D1 /* XWDeviceListCtrl.h */,
+				9A66772121DCBC6A007F51D1 /* XWDeviceListCtrl.m */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		9A66772221DCBC6A007F51D1 /* ServiceList */ = {
+			isa = PBXGroup;
+			children = (
+				9A66772321DCBC6A007F51D1 /* XWServiceListCtrl.h */,
+				9A66772421DCBC6A007F51D1 /* XWServiceListCtrl.m */,
+			);
+			path = ServiceList;
+			sourceTree = "<group>";
+		};
+		9A66772521DCBC6A007F51D1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9A66772621DCBC6A007F51D1 /* Categorys */,
+				9A66773121DCBC6A007F51D1 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9A66772621DCBC6A007F51D1 /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				9A66772721DCBC6A007F51D1 /* NSString+Ext.h */,
+				9A66772821DCBC6A007F51D1 /* NSString+Ext.m */,
+				9A66772921DCBC6A007F51D1 /* UIColor+Ext.h */,
+				9A66772A21DCBC6A007F51D1 /* UIColor+Ext.m */,
+				9A66772B21DCBC6A007F51D1 /* UINavigationController+Ext.h */,
+				9A66772C21DCBC6A007F51D1 /* UINavigationController+Ext.m */,
+				9A66772D21DCBC6A007F51D1 /* UIView+LayoutMethods.h */,
+				9A66772E21DCBC6A007F51D1 /* UIView+LayoutMethods.m */,
+				9A66772F21DCBC6A007F51D1 /* UIViewController+Ext.h */,
+				9A66773021DCBC6A007F51D1 /* UIViewController+Ext.m */,
+			);
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		9A66773121DCBC6A007F51D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A66773221DCBC6A007F51D1 /* KKeyBoard.h */,
+				9A66773321DCBC6A007F51D1 /* KKeyBoard.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A66773421DCBC6A007F51D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A66773521DCBC6A007F51D1 /* Assets.xcassets */,
+				9A66773621DCBC6A007F51D1 /* LaunchScreen.storyboard */,
+				9A66773821DCBC6A007F51D1 /* Info.plist */,
+				9A66773921DCBC6A007F51D1 /* main.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		812624FF21DB619D000E9681 /* DoseDoBluetooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126251621DB619F000E9681 /* Build configuration list for PBXNativeTarget "DoseDoBluetooth" */;
+			buildPhases = (
+				812624FC21DB619D000E9681 /* Sources */,
+				812624FD21DB619D000E9681 /* Frameworks */,
+				812624FE21DB619D000E9681 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoseDoBluetooth;
+			productName = XWBluetooth;
+			productReference = 8126250021DB619D000E9681 /* DoseDoBluetooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		812624F821DB619D000E9681 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = bill;
+				TargetAttributes = {
+					812624FF21DB619D000E9681 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 812624FB21DB619D000E9681 /* Build configuration list for PBXProject "DoseDoBluetooth" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 812624F721DB619D000E9681;
+			productRefGroup = 8126250121DB619D000E9681 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				812624FF21DB619D000E9681 /* DoseDoBluetooth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		812624FE21DB619D000E9681 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A66774621DCBC6A007F51D1 /* Assets.xcassets in Resources */,
+				9A66774721DCBC6A007F51D1 /* LaunchScreen.storyboard in Resources */,
+				9A66774821DCBC6A007F51D1 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		812624FC21DB619D000E9681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A66774921DCBC6A007F51D1 /* main.m in Sources */,
+				9A66773D21DCBC6A007F51D1 /* XWWriteCharacteristicView.m in Sources */,
+				9A66774321DCBC6A007F51D1 /* UIView+LayoutMethods.m in Sources */,
+				9A66774521DCBC6A007F51D1 /* KKeyBoard.m in Sources */,
+				9A66774221DCBC6A007F51D1 /* UINavigationController+Ext.m in Sources */,
+				9A66774121DCBC6A007F51D1 /* UIColor+Ext.m in Sources */,
+				9A66773F21DCBC6A007F51D1 /* XWServiceListCtrl.m in Sources */,
+				9A66774021DCBC6A007F51D1 /* NSString+Ext.m in Sources */,
+				9A66773A21DCBC6A007F51D1 /* AppDelegate.m in Sources */,
+				9A66773E21DCBC6A007F51D1 /* XWDeviceListCtrl.m in Sources */,
+				9A66774421DCBC6A007F51D1 /* UIViewController+Ext.m in Sources */,
+				9A66773B21DCBC6A007F51D1 /* XWCharacteristicCell.m in Sources */,
+				9A66773C21DCBC6A007F51D1 /* XWCharacteristicsListCtrl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A66773621DCBC6A007F51D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A66773721DCBC6A007F51D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8126251421DB619F000E9681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8126251521DB619F000E9681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8126251721DB619F000E9681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E43JSF7XC8;
+				INFOPLIST_FILE = "$(SRCROOT)/DoseDoBluetooth/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.XWBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8126251821DB619F000E9681 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E43JSF7XC8;
+				INFOPLIST_FILE = "$(SRCROOT)/DoseDoBluetooth/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bill.XWBluetooth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		812624FB21DB619D000E9681 /* Build configuration list for PBXProject "DoseDoBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126251421DB619F000E9681 /* Debug */,
+				8126251521DB619F000E9681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8126251621DB619F000E9681 /* Build configuration list for PBXNativeTarget "DoseDoBluetooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126251721DB619F000E9681 /* Debug */,
+				8126251821DB619F000E9681 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 812624F821DB619D000E9681 /* Project object */;
+}
